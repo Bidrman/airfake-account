@@ -1,0 +1,41 @@
+.hero {
+    &__heading {
+        font-size: 36px;
+        font-weight: 100;
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 48px;
+        }
+    }
+
+    &__text {
+        @include media-breakpoint-up(md) {
+            max-width: 500px !important;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 1.5rem;
+    }
+
+    &__hr {
+        height: 2px;
+        background-color: #d8d8d8;
+        margin: 1rem 0;
+
+        @include media-breakpoint-up(md) {
+            margin: 2rem 0;
+        }
+    }
+
+    &__btn {
+        font-weight: 500 !important;
+        border-radius: 8px !important;
+        border: 1px solid #709502 !important;
+        line-height: 26px;
+        padding: 12px 24px !important;
+        margin-left: 2rem;
+    }
+}

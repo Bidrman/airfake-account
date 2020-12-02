@@ -1,0 +1,21 @@
+@import './sanitize.scss';
+@import './variables/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './main.scss';
+
+@import './navigation/navigation';
+@import './subfooter/subfooter';
+@import './footer/footer';
+
+//Features
+@import './features/topControls';
+@import './features/hero';
+@import './features/customCard';
+
+//Effects & backgrounds
+@import './effects/link-arrow';
+@import './backgrounds/sectionBg';
+
+// FONTS
+@import './typography/font-family';
+@import './typography/links';

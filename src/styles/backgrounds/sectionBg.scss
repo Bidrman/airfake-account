@@ -1,0 +1,12 @@
+.bg {
+    &-dudes {
+        background-image: url(../../files/images/background/myair-typci.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 100% 100%;
+
+        @include media-breakpoint-down(md) {
+            background-image: none;
+        }
+    }
+}

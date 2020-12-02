@@ -1,0 +1,16 @@
+.arrow {
+    &-moving {
+        &::before {
+            position: absolute;
+            padding: 5px;
+            right: -16px;
+            top: 50%;
+            transform: translate(100%, -50%);
+            content: '🡒';
+            color: $green;
+            font-size: 25px;
+            text-decoration: none;
+            transition: all 0.75s;
+        }
+    }
+}
