@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Button } from 'reactstrap'
 
+import { ArrowRight } from 'react-bootstrap-icons'
+
 import Google from '../../components/icons/google'
 import Ios from '../../components/icons/ios'
 
@@ -14,17 +16,20 @@ const Hero = () => {
                 </span>
                 <div className={'d-flex flex-row mb-3'}>
                     <a href='#' className={'d-block mr-2'}>
-                        <Ios />
+                        <Ios background='transparent' fill='black' width={155} height={44} />
                     </a>
                     <a href='#' className={'d-block ml-2'}>
-                        <Google background='transparent' fill='black' />
+                        <Google background='transparent' fill='black' width={155} height={44} />
                     </a>
                 </div>
                 <div className={'hero__hr'}></div>
                 <div className={'mb-4'}>
-                    <span className={'font-20 text-grey'}>Chci běžný účet v Air Bank</span>
-                    <Button className={'bg-green text-uppercase text-black font-14 hero__btn'}>
+                    <span className={'font-20 text-grey font-500'}>Chci běžný účet v Air Bank</span>
+                    <Button
+                        className={'bg-green text-uppercase text-black font-14 hero__btn align-items-center'}
+                    >
                         Založit účet
+                        <ArrowRight size={21} className={'ml-3 hero__arrow'} />
                     </Button>
                 </div>
             </Col>

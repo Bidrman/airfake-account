@@ -71,6 +71,10 @@ text-graish {
     font-weight: 100 !important;
 }
 
+.font-500 {
+    font-weight: 500 !important;
+}
+
 @include media-breakpoint-down(md) {
     body {
         text-align: center;

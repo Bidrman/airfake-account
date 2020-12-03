@@ -24,6 +24,7 @@
         height: 2px;
         background-color: #d8d8d8;
         margin: 1rem 0;
+        max-width: 466px;
 
         @include media-breakpoint-up(md) {
             margin: 2rem 0;
@@ -37,5 +38,10 @@
         line-height: 26px;
         padding: 12px 24px !important;
         margin-left: 2rem;
+    }
+
+    &__arrow {
+        padding-bottom: 3px;
+        line-height: 20px;
     }
 }

@@ -1,0 +1,65 @@
+.instructions {
+    &__row {
+        flex-flow: row wrap;
+    }
+
+    &__main-heading {
+        margin-bottom: 2rem;
+    }
+
+    &__card {
+        width: 358px;
+        border-radius: 8px !important;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+            0 0 2px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &__img {
+        height: 185px;
+        width: auto;
+        background-color: $lightGray;
+        padding: 0 40px;
+    }
+
+    &__text {
+        padding: 24px 40px;
+        padding-left: 61px;
+        position: relative;
+    }
+
+    &__heading {
+        display: block;
+        position: relative;
+        &-first::before {
+            content: '1.';
+            position: absolute;
+            left: 30px;
+
+            font-size: 24px;
+            font-weight: 500;
+            color: $green;
+        }
+        &-second::before {
+            content: '2.';
+            position: absolute;
+            left: 30px;
+
+            font-size: 24px;
+            font-weight: 500;
+            color: $green;
+        }
+        &-third::before {
+            content: '3.';
+            position: absolute;
+            left: 30px;
+
+            font-size: 24px;
+            font-weight: 500;
+            color: $green;
+        }
+    }
+
+    &__desc {
+        min-height: 90px;
+    }
+}

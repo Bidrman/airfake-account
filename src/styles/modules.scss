@@ -7,14 +7,18 @@
 @import './subfooter/subfooter';
 @import './footer/footer';
 
+// Components
+// @import './components/customCard';
+
 //Features
 @import './features/topControls';
 @import './features/hero';
-@import './features/customCard';
+@import './features/instructions';
 
 //Effects & backgrounds
 @import './effects/link-arrow';
 @import './backgrounds/sectionBg';
+@import './backgrounds/cardBg';
 
 // FONTS
 @import './typography/font-family';

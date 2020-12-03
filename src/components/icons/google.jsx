@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Google = ({ fill, background }) => {
+const Google = ({ width, height, fill, background }) => {
     return (
-        <svg width='135' height='40' viewBox='0 0 162 48'>
+        <svg width={width} height={height} viewBox='0 0 166 48'>
             <g fill='none' fillRule='nonzero'>
                 <path
                     fill={background}
                     d='M156 48H6c-3.36 0-6-2.76-6-6V6c0-3.36 2.76-6 6-6h150c3.36 0 6 2.76 6 6v36c0 3.36-2.64 6-6 6z'
                 ></path>
                 <path
-                    fill='#A6A6A6'
+                    fill={fill}
                     d='M156 .96c2.76 0 5.04 2.28 5.04 5.04v36c0 2.76-2.28 5.04-5.04 5.04H6C3.24 47.04.96 44.76.96 42V6C.96 3.24 3.24.96 6 .96h150zm0-.96H6C2.76 0 0 2.76 0 6v36c0 3.36 2.76 6 6 6h150c3.36 0 6-2.76 6-6V6c0-3.24-2.64-6-6-6z'
                 ></path>
                 <path
