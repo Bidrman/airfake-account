@@ -1,0 +1,20 @@
+.benefits {
+    &__heading {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 4rem;
+            margin-top: 3.062rem;
+        }
+    }
+
+    &__card {
+        width: 243px;
+        border: none !important;
+
+        &__desc-text {
+            line-height: 1.63;
+        }
+    }
+}

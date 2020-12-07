@@ -28,7 +28,7 @@ $colors: map-merge(
     ),
     $colors
 );
-$primary: $red !default;
+$primary: $green !default;
 $secondary: $yellow !default;
 $success: $purple !default;
 $info: #f1f4f5 !default;
@@ -58,7 +58,7 @@ $grid-breakpoints: (
     xs: 0,
     sm: 576px,
     md: 768px,
-    lg: 920px,
+    lg: 990px,
     xl: 1160px,
 ) !default;
 
