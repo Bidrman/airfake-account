@@ -1,4 +1,14 @@
 .download {
     background-color: $green;
     border-radius: 8px;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0);
+    margin-top: 1.5rem;
+
+    &__heading {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    &__desc {
+        max-width: 498px;
+    }
 }

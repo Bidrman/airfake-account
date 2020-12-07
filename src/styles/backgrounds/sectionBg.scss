@@ -9,4 +9,15 @@
             background-image: none;
         }
     }
+
+    &-mobile-app {
+        background-image: url(../../files/images/background/myair-mobil.png);
+        background-repeat: no-repeat;
+        background-size: auto 99%;
+        background-position: 11% 100%;
+
+        @include media-breakpoint-down(md) {
+            background-image: none;
+        }
+    }
 }

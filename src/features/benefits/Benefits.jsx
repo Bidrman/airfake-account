@@ -8,9 +8,9 @@ const Benefits = () => {
     return (
         <div className={'benefits'}>
             <div className={'text-center'}>
-                <h3 className={' font-36 text-grey mt- benefits__heading'}>Co u nás získate?</h3>
+                <h3 className={' font-36 font-100 text-grey mt- benefits__heading'}>Co u nás získate?</h3>
             </div>
-            <Row className={'d-flex flex-column flex-sm-row justify-content-center'}>
+            <Row className={'d-flex flex-column flex-sm-row justify-content-center pb-2 pb-lg-3'}>
                 <Col xs={12} md={6} lg={3} className={'mb-2 mb-md-3'}>
                     <CustomCard className={'benefits__card text-center mx-auto'}>
                         <div className={'benefits__card__image text-center'}>
