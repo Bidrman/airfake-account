@@ -14,11 +14,19 @@
     }
 
     &__card {
-        width: 358px;
+        max-width: 358px;
         margin: 0 auto;
         border-radius: 8px !important;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
             0 0 2px 0 rgba(0, 0, 0, 0.12);
+
+        @include media-breakpoint-up(xl) {
+            width: 358px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 100%;
+        }
     }
 
     &__img {
@@ -29,9 +37,23 @@
     }
 
     &__text {
-        padding: 24px 40px;
+        padding: 24px 30px;
         padding-left: 61px;
         position: relative;
+
+        @include media-breakpoint-up(md) {
+            padding: 24px 40px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 24px 20px;
+            padding-left: 50px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 24px 40px;
+            padding-left: 61px;
+        }
     }
 
     &__heading {

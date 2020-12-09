@@ -9,7 +9,7 @@ import Ios from '../../components/icons/ios'
 const Hero = () => {
     return (
         <div className='w-100 d-flex flex-row hero'>
-            <Col xs={12} md={6} className={'px-0 pb-mb-2 hero__text'}>
+            <Col xs={12} md={12} lg={6} className={'px-0 pb-mb-2 hero__text'}>
                 <h1 className={'hero__heading'}>Založte si účet z mobilu na pár ťuknutí</h1>
                 <span className={'d-block font-18 text-grey hero__desc'}>
                     Stačí si stáhnout aplikaci My Air a na pobočku nemusíte
@@ -23,7 +23,7 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className={'hero__hr'}></div>
-                <div className={'hero__btn-section'}>
+                <div className={'d-flex flex-row hero__btn-section'}>
                     <span className={'font-20 text-grey font-500'}>Chci běžný účet v Air Bank</span>
                     <Button
                         className={'bg-green text-uppercase text-black font-14 hero__btn align-items-center'}
@@ -33,7 +33,7 @@ const Hero = () => {
                     </Button>
                 </div>
             </Col>
-            <Col xs={0} md={6} className={'px-0 h-100 bg-dudes'}></Col>
+            <Col xs={0} lg={6} className={'px-0 h-100 bg-dudes'}></Col>
         </div>
     )
 }

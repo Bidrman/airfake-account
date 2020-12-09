@@ -9,6 +9,11 @@
     &__list-socials {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center;
+
+        @include media-breakpoint-up(sm) {
+            justify-content: start;
+        }
     }
 
     &__list-item {

@@ -15,7 +15,7 @@ const Subfooter = () => {
                 collapseOnSelect
                 className={'w-100 mt-3 mt-lg-5 align-items-start subfooter__navigation'}
             >
-                <Col xs={12} md={3}>
+                <Col xs={12} sm={6} md={3}>
                     <h4 className='green mb-3 font-500 font-20 text-black'>Časté dotazy</h4>
                     <p className={'text-grey'}>Zde najdete odpovědi na všemožné dotazy k založení účtu</p>
 
@@ -27,7 +27,7 @@ const Subfooter = () => {
                         </li>
                     </ul>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} sm={6} md={3}>
                     <h4 className='green mb-3 font-500 font-20 text-black'>Zavoláme Vám</h4>
                     <p className={'text-grey'}>
                         Nevíte si rady? Dejte nám na sebe telefon a my se vám ozveme.
@@ -41,7 +41,7 @@ const Subfooter = () => {
                         </li>
                     </ul>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} sm={6} md={3}>
                     <h4 className='green mb-3 font-500 font-20 text-black'>Napište nám</h4>
                     <p className={'text-grey'}>Rádi vám poradíme i po e-mailu.</p>
 
@@ -53,7 +53,7 @@ const Subfooter = () => {
                         </li>
                     </ul>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} sm={6} md={3}>
                     <h4 className='green mb-3 font-500 font-20 text-black'>Sledujte nás</h4>
                     <ul className='subfooter__list-socials'>
                         <li className='subfooter__list-item mb-2'>
