@@ -6,11 +6,16 @@
         list-style: none;
     }
 
+    &__list-socials {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
     &__list-item {
     }
 
     &__link {
-        color: $white;
+        color: $grey;
         font-size: 16px;
         position: relative;
         text-decoration: underline;
@@ -19,10 +24,11 @@
 
         &::before {
             position: absolute;
-            left: -35px;
+            right: -40px;
+            top: -8px;
             content: '🡒';
             color: $green;
-            font-size: 17px;
+            font-size: 25px;
             text-decoration: none;
             transition: all 0.75s;
         }
@@ -32,7 +38,7 @@
             text-decoration: underline;
 
             &::before {
-                left: -27px;
+                right: -48px;
             }
         }
     }
@@ -53,8 +59,16 @@
         }
     }
 
+    &__social {
+        display: inline-block;
+        margin-right: 0.5rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 1rem;
+        }
+    }
+
     &__navigation {
-        align-items: flex-start;
     }
 
     @include media-breakpoint-down(md) {

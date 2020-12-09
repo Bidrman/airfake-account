@@ -6,6 +6,7 @@ import Hero from './features/hero'
 import Instructions from './features/instructions'
 import Benefits from './features/benefits'
 import Download from './features/downloadNow'
+import Subfooter from './features/subfooter'
 
 const App = () => {
     return (
@@ -37,6 +38,11 @@ const App = () => {
             <section className={''}>
                 <Container className={'px-0'}>
                     <Download />
+                </Container>
+            </section>
+            <section className={''}>
+                <Container className={'px-0'}>
+                    <Subfooter />
                 </Container>
             </section>
         </div>

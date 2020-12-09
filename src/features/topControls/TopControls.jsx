@@ -12,7 +12,12 @@ const TopControls = () => {
                 </a>
             </Col>
             <Col xs={3} className={'px-0 d-flex justify-content-center'}>
-                <a href={'#'} className={'d-block position-relative arrow-moving topControls__link'}>
+                <a
+                    href={'http://localhost:3000/'}
+                    className={
+                        'd-block position-relative text-decoration-underline arrow-moving topControls__link'
+                    }
+                >
                     Přejít na airbank
                 </a>
             </Col>

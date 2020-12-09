@@ -6,9 +6,19 @@
 
     &__heading {
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+        line-height: 1.33;
+    }
+
+    &__subheading {
+        line-height: 1.46 !important;
     }
 
     &__desc {
         max-width: 498px;
+        margin-bottom: 1.2rem !important;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2rem !important;
+        }
     }
 }

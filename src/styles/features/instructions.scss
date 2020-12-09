@@ -1,6 +1,11 @@
 .instructions {
     &__row {
         flex-flow: row wrap;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__main-heading {
@@ -9,6 +14,7 @@
 
     &__card {
         width: 358px;
+        margin: 0 auto;
         border-radius: 8px !important;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
             0 0 2px 0 rgba(0, 0, 0, 0.12);

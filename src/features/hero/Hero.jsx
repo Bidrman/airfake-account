@@ -16,10 +16,10 @@ const Hero = () => {
                 </span>
                 <div className={'d-flex flex-row mb-3'}>
                     <a href='#' className={'d-block mr-2'}>
-                        <Ios background='transparent' fill='black' width={155} height={44} />
+                        <Ios background='transparent' fill='black' width={152} height={44} />
                     </a>
-                    <a href='#' className={'d-block ml-2'}>
-                        <Google background='transparent' fill='black' width={155} height={44} />
+                    <a href='#' className={'d-block ml-1'}>
+                        <Google background='transparent' fill='black' width={152} height={44} />
                     </a>
                 </div>
                 <div className={'hero__hr'}></div>

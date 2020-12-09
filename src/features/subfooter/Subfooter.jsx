@@ -2,190 +2,96 @@ import React from 'react'
 import { Row, Col, Container } from 'reactstrap'
 import Navbar from 'react-bootstrap/Navbar'
 
-import { Envelope, Telephone, GeoAlt } from 'react-bootstrap-icons'
+import LinkedIn from '../../components/icons/linkedin'
+import Facebook from '../../components/icons/fb'
+import Youtube from '../../components/icons/youtube'
+import Twitter from '../../components/icons/twitter'
 
 const Subfooter = () => {
     return (
         <Container>
-            <Navbar expand={'lg'} collapseOnSelect className={'w-100 subfooter__navigation'}>
-                <Col>
-                    <h4 className='green mb-3  font-20'>Kontaktujte nás</h4>
-                    <div className='mb-4'>
-                        <Telephone width='25' height='25' className='mr-2' fill='#9c3' />
-                        <a href='tel:+420515202202' className='icon-phone'>
-                            +420 515 202 202
-                        </a>
-                    </div>
-                    <div className='mb-3'>
-                        <GeoAlt width='17' height='17' className='mr-3' fill='#9c3' />
-                        <a href='#' className='icon'>
-                            Pobočky a bankomaty
-                        </a>
-                    </div>
-                    <div className='mb-3'>
-                        <Telephone width='17' height='17' className='mr-3' fill='#9c3' />
-                        <a href='#' className='icon'>
-                            Zavoláme vám
-                        </a>
-                    </div>
-                    <div className='mb-3'>
-                        <Envelope width='17' height='17' className='mr-3' fill='#9c3' />
-                        <a href='#' className='icon'>
-                            Napište nám
-                        </a>
-                    </div>
+            <Navbar
+                expand={'lg'}
+                collapseOnSelect
+                className={'w-100 mt-3 mt-lg-5 align-items-start subfooter__navigation'}
+            >
+                <Col xs={12} md={3}>
+                    <h4 className='green mb-3 font-500 font-20 text-black'>Časté dotazy</h4>
+                    <p className={'text-grey'}>Zde najdete odpovědi na všemožné dotazy k založení účtu</p>
+
+                    <ul className='subfooter__list'>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__link'>
+                                Časté otázky
+                            </a>
+                        </li>
+                    </ul>
                 </Col>
-                <Col>
-                    <Navbar.Toggle aria-controls='footerAirbank'>
-                        <h4 className='green mb-3 font-20'>O Air Bank</h4>
-                    </Navbar.Toggle>
-                    <h4 className='green mb-3 ghost  font-20'>O Air Bank</h4>
-                    <Navbar.Collapse id={'footerAirbank'}>
-                        <ul className='subfooter__list'>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    O nás
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Žhavé novinky
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Pro novináře
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Pracujte u nás
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Dokumenty
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Kontakty
-                                </a>
-                            </li>
-                        </ul>
-                    </Navbar.Collapse>
+                <Col xs={12} md={3}>
+                    <h4 className='green mb-3 font-500 font-20 text-black'>Zavoláme Vám</h4>
+                    <p className={'text-grey'}>
+                        Nevíte si rady? Dejte nám na sebe telefon a my se vám ozveme.
+                    </p>
+
+                    <ul className='subfooter__list'>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__link'>
+                                Zavoláme Vám
+                            </a>
+                        </li>
+                    </ul>
                 </Col>
-                <Col>
-                    <Navbar.Toggle aria-controls='footerOffer'>
-                        <h4 className='green mb-3  font-20'>Nabídka</h4>
-                    </Navbar.Toggle>
-                    <h4 className='green mb-3 ghost font-20'>Nabídka</h4>
-                    <Navbar.Collapse id={'footerOffer'}>
-                        <ul className='subfooter__list'>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Běžný účet
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Spořící účet
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Půjčky
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Hypotéky
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Kontokorent
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Pojištění
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Mobilní bankovnictví
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Internetové bankovnictví
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Šanon
-                                </a>
-                            </li>
-                        </ul>
-                    </Navbar.Collapse>
+                <Col xs={12} md={3}>
+                    <h4 className='green mb-3 font-500 font-20 text-black'>Napište nám</h4>
+                    <p className={'text-grey'}>Rádi vám poradíme i po e-mailu.</p>
+
+                    <ul className='subfooter__list'>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__link'>
+                                Napište nám
+                            </a>
+                        </li>
+                    </ul>
                 </Col>
-                <Col>
-                    <Navbar.Toggle aria-controls='footerSupport'>
-                        <h4 className='green mb-3 font-20'>Podpora</h4>
-                    </Navbar.Toggle>
-                    <h4 className='green mb-3 ghost font-20'>Podpora</h4>
-                    <Navbar.Collapse id={'footerSupport'}>
-                        <ul className='subfooter__list'>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Kurzovní lístek
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Co vás nejvíc zajímá
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Pokračovat v žádosti
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Aplikace třetích stran
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Bezpečnost a soukromí
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Ceník ke stažení
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Přehled úrokových sazeb
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Reklamační řád
-                                </a>
-                            </li>
-                            <li className='subfooter__list-item mb-2'>
-                                <a href='#' className='subfooter__link'>
-                                    Obchodní podmínky
-                                </a>
-                            </li>
-                        </ul>
-                    </Navbar.Collapse>
+                <Col xs={12} md={3}>
+                    <h4 className='green mb-3 font-500 font-20 text-black'>Sledujte nás</h4>
+                    <ul className='subfooter__list-socials'>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__social'>
+                                <Facebook />
+                            </a>
+                        </li>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__social'>
+                                <LinkedIn />
+                            </a>
+                        </li>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__social'>
+                                <Twitter />
+                            </a>
+                        </li>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__social'>
+                                <Twitter />
+                            </a>
+                        </li>
+                        <li className='subfooter__list-item mb-2'>
+                            <a href='#' className='subfooter__social'>
+                                <Youtube />
+                            </a>
+                        </li>
+                    </ul>
                 </Col>
             </Navbar>
+            <Col xs='12' className={'px-0 pt-4 w-100 d-flex flex-row justify-content-start'}>
+                <Col className={'px-0'}>
+                    <span className={'d-block text-grey footer__text'}>
+                        Člen skupiny PPF, IČO 29045371 / Evropská 2690/17, 160 00 Praha 6, zapsaná u
+                        rejstříkového soudu v Praze — spisová značka B 16013
+                    </span>
+                </Col>
+            </Col>
         </Container>
     )
 }
