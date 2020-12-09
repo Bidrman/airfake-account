@@ -15,7 +15,7 @@ const Hero = () => {
                     Stačí si stáhnout aplikaci My Air a na pobočku nemusíte
                 </span>
                 <div className={'d-flex flex-row mb-3'}>
-                    <a href='#' className={'d-block mr-2'}>
+                    <a href='#' className={'d-block mr-1'}>
                         <Ios background='transparent' fill='black' width={152} height={44} />
                     </a>
                     <a href='#' className={'d-block ml-1'}>
@@ -23,12 +23,12 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className={'hero__hr'}></div>
-                <div className={'mb-4'}>
+                <div className={'hero__btn-section'}>
                     <span className={'font-20 text-grey font-500'}>Chci běžný účet v Air Bank</span>
                     <Button
                         className={'bg-green text-uppercase text-black font-14 hero__btn align-items-center'}
                     >
-                        Založit účet
+                        <span className={'font-500 font-14 hero__btn-text'}>Založit účet</span>
                         <ArrowRight size={21} className={'ml-3 hero__arrow'} />
                     </Button>
                 </div>

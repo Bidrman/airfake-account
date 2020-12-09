@@ -7,15 +7,15 @@ const Instructions = () => {
     return (
         <div className={'instructions'}>
             <div className={'d-flex flex-column align-items-center'}>
-                <h2 className={'mt-3 mt-md-5 font-36 text-black font-100 instructions__main-heading'}>
+                <h2 className={'mt-3 mt-md-5 font-36 font-100 instructions__main-heading'}>
                     Stihnete to dřív, než řeknete appka
                 </h2>
                 <span className={'text-grey mb-3 mb-md-5 font-20'}>
-                    Chcete vědět víc? Mrkněte na <u>video</u>, které vás porvede založením krok za krokem
+                    Chcete vědět víc? Mrkněte na <u>video</u>, které vás provede založením krok za krokem
                 </span>
             </div>
             <div className={'d-flex instructions__row'}>
-                <Col xs={12} md={6} lg={4} className={'mb-3 px-0'}>
+                <Col xs={12} md={6} lg={4} className={'mb-3 px-0 '}>
                     <CustomCard className={'instructions__card'}>
                         <div className={'instructions__img'}>
                             <div className={'w-100  h-100 step-one'}></div>

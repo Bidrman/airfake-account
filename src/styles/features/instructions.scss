@@ -10,6 +10,7 @@
 
     &__main-heading {
         margin-bottom: 2rem;
+        color: #0a100d;
     }
 
     &__card {
@@ -36,6 +37,13 @@
     &__heading {
         display: block;
         position: relative;
+
+        &-first,
+        &-second,
+        &-third {
+            line-height: 1.46;
+        }
+
         &-first::before {
             content: '1.';
             position: absolute;
@@ -67,5 +75,6 @@
 
     &__desc {
         min-height: 90px;
+        margin-bottom: 1.5rem !important;
     }
 }
